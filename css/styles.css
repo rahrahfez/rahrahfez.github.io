@@ -1,0 +1,251 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* sidebar */
+.sidebar {
+  width: 5rem;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  z-index: 1;
+}
+
+.menu-icon {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.line {
+  width: 2rem;
+  height: .2rem;
+  background-color: #222;
+  margin-bottom: .6rem;
+}
+
+.line-1, .line-3 {
+  width: 1.3rem;
+  transition: all .5s;
+}
+
+.menu-icon:hover .line {
+  width: 2rem;
+}
+
+.social-media-icons {
+    list-style: none;
+    padding: 0;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #555;
+  transition: color .3s;
+}
+
+.social-icon-tw:hover {
+  color: #1DA1F2;
+}
+
+.social-icon-fb:hover {
+  color: #3C5A99;
+}
+
+.social-icon-ld:hover {
+  color: #0077B5;
+}
+
+.social-icon-gh:hover {
+  color: #000000;
+}
+
+/* navigation */
+.navigation {
+  position: fixed;
+  left: -15rem;
+  width: 20rem;
+  height: 100%;
+  background-color: rgba(202, 202, 202, .8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: left .5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-links-group {
+  list-style: none;
+  padding: 0;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.navigation-link {
+  font-size: 2rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.checkbox:checked ~ .navigation {
+  left: 5rem;
+}
+
+.checkbox:checked ~ .sidebar .line-1 {
+  transform: rotate(-405deg) translate(-5px, 13px);
+  width: 2.5rem;
+}
+
+.checkbox:checked ~ .sidebar .line-2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .sidebar .line-3 {
+  transform: rotate(405deg) translate(-5px, -13px);
+  width: 2.5rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+/* header */
+.header {
+  margin-left: 5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, .5),
+  rgba(0, 0, 0, .6)
+  ),url('../img/laurynas-mereckas-1487417-unsplash.jpg') center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  height: 15rem;
+}
+
+.introduction-banner {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-element-1 {
+  font-size: 6rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.header-element-2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+}
+
+.header-element-3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: auto;  
+}
+
+.arrow {
+  height: 5rem;
+}
+
+.down-arrow {
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  height: 3rem;
+  width: 3rem;
+  transform: rotate(45deg);
+  transition: border-width .3s ease;
+  cursor: pointer;
+}
+
+.down-arrow:hover {
+  border-width: 0px 3px 3px 0px;
+}
+
+/* about */
+.about {
+  background-color: #4a4e4d;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 15rem;
+}
+
+.about-img {
+  flex: 0 1 50%;
+  align-self: center;
+  transform: translate(50%, 0);
+}
+
+.about-text {
+  color: #fff;
+  font-weight: 400;
+  flex: 1 1;
+}
+
+.about-text-header {
+  font-size: 3rem;
+}
+
+/* work */
+.work {
+  height: 60rem;
+  margin-left: 5rem;
+  background-color: #fff;
+}
+
+/* contact */
+.contact {
+  height: 15rem;
+  margin-left: 5rem;
+  background-color: #4a4e4d;
+}
+
+.contact-form {
+  
+}
+
+/* media mixins */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }

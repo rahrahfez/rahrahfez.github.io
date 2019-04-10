@@ -1,30 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>David Om</title>
-    <link rel="shortcut icon" type="image/png" href="/images/srs-logo.jpeg"/>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>David Om</title>
+        <link rel="shortcut icon" type="image/png" href="/img/srs-logo.jpeg"/>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
 
-<body>
-    <!-- NAVBAR SECTION -->
-    <section class="container nav">
-            <ul>
-                <li>
-                    <a href="https://www.github.com/rahrahfez/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/david-om/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                </li>
-            </ul>
-    </section>
+    <body>
+        <div class="navbar">
+            <input type="checkbox" class="checkbox" id="click">
+            <!-- sidebar -->
+            <div class="sidebar">
+                <label for="click">
+                    <div class="menu-icon">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                    </div>
+                </label>           
     
-    <h3>davidom.io coming soon!</h3>
+                <!-- social-media-icons -->
+                <ul class="social-media-icons">
+                    <!-- <li><a href="#" class="social-icon social-icon-fb"><i class="fab fa-facebook"></i></a></li> -->
+                    <li><a href="https://www.linkedin.com/in/david-om" target="_blank" class="social-icon social-icon-ld"><i class="fab fa-linkedin"></i></a></li>
+                    <!-- <li><a href="#" class="social-icon social-icon-tw"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="https://github.com/rahrahfez" target="_blank" class="social-icon social-icon-gh"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <p style="color: #555; font-size:1rem; margin-bottom:2rem;">&copy;2019</p>
+            </div>
+            <!-- /sidebar -->
     
-</body>
-<script src="app.js"></script>
+            <!-- navigation -->
+            <nav class="navigation">
+                <ul class="navigation-links-group">
+                    <li><a data-scroll href="#" class="navigation-link">home</a></li>
+                    <li><a data-scroll href="#about" class="navigation-link">about</a></li>
+                    <li><a data-scroll href="#work" class="navigation-link">work</a></li>
+                    <!-- <li><a href="#" class="navigation-link">blog</a></li> -->
+                    <li><a data-scroll href="#contact" class="navigation-link">contact</a></li>
+                </ul>
+            </nav>
+            <!-- /navigation -->
+        </div>
+
+        <!-- header -->
+        <header class="header">
+            <div class="brand">
+
+            </div>
+            <div class="introduction-banner">
+                <h1 class="header-element-1">Hello.</h1>
+                <h3 class="header-element-2">My name is David and I am an aspiring front-end web developer.</h3>
+                <h3 class="header-element-2">I have experience with Angular 2+ and also C#.</h3>
+                <h4 class="header-element-3">See my work.</h4>
+            </div class="arrow">
+                <a data-scroll href="#about">
+                    <div class="down-arrow"></div>            
+                </a>
+        </header>
+        <!-- /header -->
+
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="/img/profile_picture_cropped.png">
+            </div>
+
+            <div class="about-text">
+                <h1 class="about-text-header">About Me.</h1>
+                <p class="about-text-content">I started programming back in 2015 with the aim to become a game developer. I began learning C++
+                    and SDL2. After a couple of small unreleased games, I then pivoted my goal and am 
+                    now focused on front-end web development. My dream is to one day be a full stack web developer,
+                    building web apps that incorporate augmented reality and machine learning.
+                </p>
+            </div>
+        </section>
+        <!-- /about -->
+
+        <!-- work -->
+        <div class="work" id="work">
+            <div>
+
+            </div>
+        </div>
+        <!-- /work -->
+
+        <!-- contact form -->
+        <div class="contact" id="contact">
+            <div class="contact-form">
+                <label for="">Name</label>
+                <input type="text" class="input-name">
+                <label for="">Email</label>
+                <input type="email">
+            </div>
+        </div>
+        
+        <!-- /contact form -->
+        <script src="app.js"></script>    
+    </body>
+    
 </html>
