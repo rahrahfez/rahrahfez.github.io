@@ -15,7 +15,7 @@ body, html {
   justify-content: space-between;
   align-items: center;
   background-color: #eee;
-  z-index: 1;
+  z-index: 10;
 }
 
 .menu-icon {
@@ -82,6 +82,7 @@ body, html {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 5;
   transition: left .5s cubic-bezier(1, 0, 0, 1);
 }
 
@@ -124,20 +125,20 @@ body, html {
 
 /* header */
 .header {
-  margin-left: 5rem;
   background: linear-gradient(to top, rgba(0, 0, 0, .5),
   rgba(0, 0, 0, .6)
   ),url('../img/laurynas-mereckas-1487417-unsplash.jpg') center no-repeat;
   background-size: cover;
   height: 100vh;
-  display: flex;
+  width: 100%;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
-.brand {
-  height: 15rem;
+.header-content {
+  margin-left: 5rem;
 }
 
 .introduction-banner {
@@ -149,6 +150,7 @@ body, html {
 }
 
 .header-element-1 {
+  font-family: Montserrat, sans-serif;
   font-size: 6rem;
   font-weight: 400;
   color: #fff;
@@ -170,11 +172,18 @@ body, html {
   margin-top: auto;  
 }
 
+.common-header {
+  font-family: Montserrat, sans-serif;
+  margin: 1rem 0;
+}
+
 .arrow {
   height: 5rem;
+  margin-bottom: 5rem;
 }
 
 .down-arrow {
+  margin-left: 5rem;
   box-sizing: border-box;
   border-style: solid;
   border-color: white;
@@ -190,62 +199,194 @@ body, html {
   border-width: 0px 3px 3px 0px;
 }
 
-/* about */
-.about {
-  background-color: #4a4e4d;
-  margin-left: 5rem;
+.scroll-btn {
+  margin-top: 10rem;
+  align-self: center;
   display: flex;
   justify-content: center;
-  padding: 3rem 15rem;
 }
 
-.about-img {
-  flex: 0 1 50%;
-  align-self: center;
-  transform: translate(50%, 0);
+.scroll-down-btn {
+  border: 1px solid white;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 25px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  background-color: rgb(42, 102, 214);
+  color: white;
+  cursor: pointer;
+  transition: all .5s;
 }
 
-.about-text {
-  color: #fff;
-  font-weight: 400;
-  flex: 1 1;
+.scroll-down-btn:hover {
+  color: rgb(42, 102, 214);
+  background-color: white;
+  font-size: 1.3rem;
+}
+
+/* about */
+.about {
+  margin-left: 5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .about-text-header {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.about-text {
+  flex: 1 1;
+  margin-left: 20rem;
+}
+
+.about-text-content {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.experience-text-header {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.experience-text {
+  flex: 0 1 50%;
+  transform: translate(150px, 0px);
+}
+
+.experience-list-group {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.icon-description {
+  vertical-align: .6rem;
+}
+
+.experience-list-icon {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.experience-angular-icon {
+  width: 2rem;
+}
+
+.experience-angular-material-icon {
+  width: 2rem;
+}
+
+.experience-asp-icon {
+  width: 2rem;
+}
+
+.experience-firebase-icon {
+  width: 2rem;
 }
 
 /* work */
 .work {
   height: 60rem;
   margin-left: 5rem;
-  background-color: #fff;
+  background-color: rgb(197, 197, 197);
+
+}
+
+/* .work-header {
+  margin-top: 2rem;
+} */
+
+.work-header-content {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+.work-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.work-img-group {
+  flex: 1 1;
+  position: relative;
+}
+
+.work-img {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 10px;
+  left: 10%;
+  z-index: 4;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
+}
+
+.work-description {
+  flex: 0 1 50%;
+}
+
+.timeclock-image-1 {
+  width: 35rem;
+  transform: translate(0px, 0px);
+}
+
+.timeclock-image-2 {
+  width: 15rem;
+  transform: translate(400px, 125px);
+}
+
+.timeclock-app-header {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.timeclock-app-description {
+  padding: 0rem 5rem;
+}
+
+.timeclock-app-btn {
+  border: 1px solid white;
+  margin-top: 10rem;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #7C4DFF;
+  color: white;
+  font-size: 1rem;
+  transition: all .5s;
+}
+
+.timeclock-app-btn:hover {
+  background-color: white;
+  color: #7C4DFF;
+  font-size: 1.1rem;
+  border: 1px solid #7C4DFF;
 }
 
 /* contact */
 .contact {
-  height: 15rem;
   margin-left: 5rem;
   background-color: #4a4e4d;
 }
 
-.contact-form {
-  
+.copyright p {
+  margin: 0;
+  color: white;
+  text-align: right;
+  padding: 1rem 2rem;
 }
 
-/* media mixins */
-@media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-  }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
-  }
+@media (max-width: 1200px) {
+
+}
