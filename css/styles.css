@@ -131,10 +131,6 @@ body, html {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .header-content {
@@ -142,34 +138,33 @@ body, html {
 }
 
 .introduction-banner {
-  height: 30rem;
+  height: 10rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .header-element-1 {
   font-family: Montserrat, sans-serif;
   font-size: 6rem;
   font-weight: 400;
-  color: #fff;
   margin-bottom: 0;
 }
 
 .header-element-2 {
   font-size: 1.7rem;
-  font-weight: 400;
   margin: 0;
-  color: #fff;
+  font-weight: 400;
 }
 
 .header-element-3 {
   font-size: 1.2rem;
-  font-weight: 400;
-  color: #fff;
   margin-bottom: 0;
-  margin-top: auto;  
+  margin-top: auto;
+  font-weight: 400;  
 }
 
 .common-header {
@@ -387,6 +382,61 @@ body, html {
   padding: 1rem 2rem;
 }
 
-@media (max-width: 1200px) {
+/* media queries */
+@media(min-width: 1400) {
 
+}
+
+@media(min-width: 1200px) {
+  .timeclock-image-1 {
+    width: 25rem;
+  }
+
+  .timeclock-image-2 {
+    width: 10rem;
+    transform: translate(300px, 125px);
+  }
+
+  .about-text {
+    margin-left: 10rem;
+  }
+
+}
+
+@media(min-width: 900px) {
+  .about-text {
+    margin-left: 5rem;
+  }
+
+  .timeclock-image-1 {
+    width: 20rem;
+  }
+
+  .timeclock-image-2 {
+    width: 8rem;
+    transform: translate(200px, 125px);
+  }
+
+  .common-header {
+    font-size: 1.2rem;
+  }
+
+  .about-text-content {
+    font-size: .8rem;
+  }
+
+  .icon-description {
+    font-size: .8rem;
+  }
+
+  .timeclock-app-description {
+    font-size: .8rem;
+  }
+
+  .timeclock-app-btn {
+    width: 5rem;
+    font-size: .8rem;
+    height: 2rem;
+    margin-top: 3rem;
+  }
 }
