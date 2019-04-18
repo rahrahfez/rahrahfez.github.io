@@ -195,7 +195,7 @@ body, html {
 }
 
 .scroll-btn {
-  margin-top: 10rem;
+  margin-top: 7rem;
   align-self: center;
   display: flex;
   justify-content: center;
@@ -383,11 +383,27 @@ body, html {
 }
 
 /* media queries */
-@media(min-width: 1400) {
+@media(min-width: 1400px) {
+  .scroll-down-btn {
+    margin-top: 15rem;
+  }
+
+  .about-text {
+    margin-left: 30rem;
+  }
+
+  .work-img-group {
+    transform: translate(300px, 0px);
+  }
+
+  .work-description {
+    max-width: 40rem;
+    margin-right: 40rem;
+  }
 
 }
 
-@media(min-width: 1200px) {
+@media(max-width: 1200px) {
   .timeclock-image-1 {
     width: 25rem;
   }
@@ -403,7 +419,7 @@ body, html {
 
 }
 
-@media(min-width: 900px) {
+@media(max-width: 900px) {
   .about-text {
     margin-left: 5rem;
   }
@@ -439,4 +455,66 @@ body, html {
     height: 2rem;
     margin-top: 3rem;
   }
+}
+
+@media(max-width: 600px) {
+  .header-element-1 {
+    font-size: 4rem;
+  }
+
+  .header-element-2 {
+    font-size: 1rem;
+  }
+
+  .header-element-3 {
+    font-size: 1rem;
+  }
+
+  .scroll-down-btn {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .about-text {
+    margin-left: 2rem;
+  }
+
+  .about-text-content {
+    font-size: .8rem;
+  }
+
+  .experience-text {
+    transform: translate(50px, 0px);
+  }
+
+  .timeclock-image-1 {
+    width: 15rem;
+  }
+
+  .timeclock-image-2 {
+    width: 8rem;
+    transform: translate(150px, 75px);
+  }
+
+  .timeclock-app-header {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .timeclock-app-btn {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: .7rem;
+    margin-top: 3rem;
+  }
+
+  .common-header {
+    font-size: 1rem;
+  }
+
+}
+
+@media(max-width: 300px) {
+
 }
