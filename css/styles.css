@@ -383,7 +383,7 @@ body, html {
 }
 
 /* media queries */
-@media(min-width: 1400px) {
+@media(max-width: 1400px) {
   .scroll-down-btn {
     margin-top: 15rem;
   }
