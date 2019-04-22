@@ -442,10 +442,6 @@ body, html {
   border-radius: 2px;
 }
 
-.submit-modal-btn {
-
-}
-
 /* media queries */
 @media(max-width: 1980px) {
   .work-img-group {
