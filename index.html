@@ -27,7 +27,7 @@
     
                 <!-- social-media-icons -->
                 <ul class="social-media-icons">
-                    <li><a href="https://www.facebook.com/david.om.56" target="_blank" class="social-icon social-icon-fb"><i class="fab fa-facebook"></i></a></li>
+                    <!-- <li><a href="https://www.facebook.com/david.om.56" target="_blank" class="social-icon social-icon-fb"><i class="fab fa-facebook"></i></a></li> -->
                     <li><a href="https://www.linkedin.com/in/david-om" target="_blank" class="social-icon social-icon-ld"><i class="fab fa-linkedin"></i></a></li>
                     <li><a href="https://twitter.com/its_PeterPan" target="_blank" class="social-icon social-icon-tw"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://github.com/rahrahfez" target="_blank" class="social-icon social-icon-gh"><i class="fab fa-github"></i></a></li>
@@ -56,17 +56,18 @@
                     <h1 class="header-element-1">Hello.</h1>
                     <h3 class="header-element-2">My name is David and I am an aspiring front-end web developer.</h3>
                     <h3 class="header-element-2">I have experience with Angular 2+ and also C#.</h3>
+                    <div class="scroll-btn">
+                        <a data-scroll href="#about">
+                            <button class="btn scroll-down-btn">See my work</button>
+                        </a>              
+                    </div>
                 </div>
                 <!-- <div class="arrow">
                     <a data-scroll href="#about">
                         <div class="down-arrow"></div>
                     </a>
                 </div> -->
-                <div class="scroll-btn">
-                    <a data-scroll href="#about">
-                        <button class="btn scroll-down-btn">See my work</button>
-                    </a>              
-                </div>
+
             </div>
         </header>
         <!-- /header -->
@@ -87,7 +88,7 @@
                 <ul class="experience-list-group">
                     <li><img class="experience-list-icon experience-angular-icon" src="img/angular_icon.png"><span class="icon-description">Angular 2+</span></li>
                     <li><img class="experience-list-icon experience-angular-material-icon" src="img/angular_material_icon_temp.png"><span class="icon-description">Angular Material</span></li>
-                    <li><img class="experience-list-icon experience-asp-icon" src="img/1_UtlEafDhb9EzAzRYl7P5kw.png"><span class="icon-description">.net Core</span></li>
+                    <!-- <li><img class="experience-list-icon experience-asp-icon" src="img/1_UtlEafDhb9EzAzRYl7P5kw.png"><span class="icon-description">.net Core</span></li> -->
                     <li><img class="experience-list-icon experience-firebase-icon" src="img/firebase_logo.png"><span class="icon-description">Firebase</span></li>
                 </ul>
             </div>
@@ -120,18 +121,34 @@
 
         <!-- contact form -->
         <section class="contact" id="contact">
-            <div class="contact-form">
-                <!-- <label for="">Name</label>
-                <input type="text" class="input-name">
-                <label for="">Email</label>
-                <input type="email"> -->
-            </div>
+            <a href="mailto:david.om582@gmail.com">
+                <button id="contact-me-btn" class="contact-me-btn">Contact Me</button>
+            </a>
+
+            <!-- <div class="contact-modal" id="contact-modal">
+                <div class="modal-content">
+                    <span><button id="close-modal">X</button></span>
+                    <h3 class="contact-header">Contact Me.</h3>
+                
+                    <form class="contact-form">
+                        <label for="">Name</label>
+                        <input type="text" class="input" placeholder="Name">
+                        <label for="">Email</label>
+                        <input type="email" class="input" placeholder="Email">
+                        <textarea class="input" cols="50" rows="4" placeholder="Message"></textarea>
+                    </form>
+
+                    <button class="submit-modal-btn">Submit</button>
+                </div>
+            </div> -->
+
             <div class="copyright">
                 <p>Copyright &copy;2019 David Om</p>
             </div>
         </section>
         
         <!-- /contact form -->
+        
         <script src="app.js"></script>    
     </body>
     
