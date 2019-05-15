@@ -5,54 +5,11 @@ body, html {
     scroll-behavior: smooth;
 }
 
-/* sidebar */
-.sidebar {
-  width: 5rem;
-  height: 100%;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #eee;
-  z-index: 10;
-}
-
-.menu-icon {
-  margin-top: 3rem;
-  cursor: pointer;
-}
-
-.line {
-  width: 2rem;
-  height: .2rem;
-  background-color: #222;
-  margin-bottom: .6rem;
-}
-
-.line-1, .line-3 {
-  width: 1.3rem;
-  transition: all .5s;
-}
-
-.menu-icon:hover .line {
-  width: 2rem;
-}
-
-.social-media-icons {
-    list-style: none;
-    padding: 0;
-    height: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 .social-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #555;
   transition: color .3s;
+  margin-right: 1rem;
 }
 
 .social-icon-tw:hover {
@@ -71,56 +28,48 @@ body, html {
   color: #000000;
 }
 
-/* navigation */
-.navigation {
+.social-icon-email:hover {
+  color: #999333;
+}
+
+/* navigation bar */
+.navigation-bar {
+  height: 4rem;
   position: fixed;
-  left: -15rem;
-  width: 20rem;
-  height: 100%;
-  background-color: rgba(202, 202, 202, .8);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 5;
-  transition: left .5s cubic-bezier(1, 0, 0, 1);
+  background-color: rgba(197, 197, 197, 0.9);
+  width: 100%;
+  z-index: 1;
 }
 
-.navigation-links-group {
+.nav-links-group {
   list-style: none;
-  padding: 0;
-  height: 20rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5rem;
 }
 
-.navigation-link {
-  font-size: 2rem;
+.nav-links {
   color: #555;
+  cursor: pointer;
+  margin-right: 4rem;
+  font-size: 1.4rem;
+  font-weight: 100;
   text-decoration: none;
 }
 
-.checkbox:checked ~ .navigation {
-  left: 5rem;
+.nav-links:visited {
+  color: #555;
 }
 
-.checkbox:checked ~ .sidebar .line-1 {
-  transform: rotate(-405deg) translate(-5px, 13px);
-  width: 2.5rem;
-}
-
-.checkbox:checked ~ .sidebar .line-2 {
-  opacity: 0;
-}
-
-.checkbox:checked ~ .sidebar .line-3 {
-  transform: rotate(405deg) translate(-5px, -13px);
-  width: 2.5rem;
-}
-
-.checkbox {
-  display: none;
+.contact-nav-btn {
+  font-size: .8rem;
+  padding: .3rem;
+  margin-right: 3rem;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
 /* header */
@@ -131,10 +80,7 @@ body, html {
   background-size: cover;
   height: 100vh;
   width: 100%;
-}
-
-.header-content {
-  margin-left: 5rem;
+  margin-bottom: 4rem;
 }
 
 .introduction-banner {
@@ -155,43 +101,22 @@ body, html {
 }
 
 .header-element-2 {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   margin: 0;
   font-weight: 400;
+  padding: 0 20rem;
+  text-justify: center;
 }
 
 .header-element-3 {
   font-size: 1.2rem;
   margin-bottom: 0;
-  margin-top: auto;
   font-weight: 400;  
 }
 
 .common-header {
   font-family: Montserrat, sans-serif;
   margin: 1rem 0;
-}
-
-.arrow {
-  height: 5rem;
-  margin-bottom: 5rem;
-}
-
-.down-arrow {
-  margin-left: 5rem;
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: white;
-  border-width: 0px 1px 1px 0px;
-  height: 3rem;
-  width: 3rem;
-  transform: rotate(45deg);
-  transition: border-width .3s ease;
-  cursor: pointer;
-}
-
-.down-arrow:hover {
-  border-width: 0px 3px 3px 0px;
 }
 
 .scroll-btn {
@@ -221,12 +146,17 @@ body, html {
 }
 
 /* about */
+#about {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}
+
 .about {
-  margin-left: 5rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  height: 20rem;
 }
 
 .about-text-header {
@@ -236,12 +166,11 @@ body, html {
 
 .about-text {
   flex: 1 1;
-  margin-left: 20rem;
+  margin-left: 40rem;
 }
 
 .about-text-content {
   font-size: 1rem;
-  margin: 0;
 }
 
 .experience-text-header {
@@ -251,7 +180,7 @@ body, html {
 
 .experience-text {
   flex: 0 1 50%;
-  transform: translate(150px, 0px);
+  transform: translateX(350px);
 }
 
 .experience-list-group {  
@@ -288,23 +217,35 @@ body, html {
 }
 
 /* work */
-.work {
-  height: 60rem;
-  margin-left: 5rem;
-  background-color: rgb(197, 197, 197);
+#work {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}
 
+.header-underline {
+  width: 10rem;
+  height: .2rem;
+  background-color: #222;
+  margin-bottom: .6rem;
+}
+
+.work {
+  height: 80rem;
+  margin-left: 0;
+  background-color: rgb(197, 197, 197);
 }
 
 .work-header-content {
   font-size: 2rem;
   font-weight: 300;
   text-align: center;
-  margin: 0;
+  margin: 0 0 3rem 0;
   padding: 2rem;
 }
 
 .work-content {
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
 }
@@ -312,30 +253,29 @@ body, html {
 .work-img-group {
   flex: 1 1;
   position: relative;
-  margin-left: 15rem;
+  margin-left: 0;
 }
 
 .work-img {
-  position: absolute;
   border: 1px solid black;
   border-radius: 10px;
-  left: 10%;
-  z-index: 4;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
 }
 
 .work-description {
-  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeclock-image-1 {
   width: 35rem;
-  transform: translate(0px, 0px);
 }
 
 .timeclock-image-2 {
   width: 15rem;
-  transform: translate(400px, 125px);
+  transform: translateX(-70px);
 }
 
 .timeclock-app-header {
@@ -344,12 +284,17 @@ body, html {
 }
 
 .timeclock-app-description {
-  padding: 0rem 5rem;
+  padding: 0rem 2rem;
+}
+
+.timeclock-app-description-footer {
+  margin: 0;
+  font-weight: 200;
 }
 
 .timeclock-app-btn {
   border: 1px solid white;
-  margin-top: 10rem;
+  margin-top: 2rem;
   width: 10rem;
   height: 4rem;
   border-radius: 2rem;
@@ -368,78 +313,28 @@ body, html {
 
 /* contact */
 .contact {
-  margin-left: 5rem;
   background-color: #4a4e4d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 3rem;
 }
 
 .copyright p {
   margin: 0;
   color: white;
-  align-self: end;
-  padding: 1rem;
+  text-align: center;
+  padding: 0;
 }
 
 .contact-me-btn {
   padding: 1rem;
   margin: 1rem;
-  font-size: 1rem;
+  font-size: 8rem;
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 0;
-}
-
-.contact-modal {
-  display: none;
-  position: fixed;
-  z-index: 11;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: none;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, .5);
-}
-
-.modal-content {
-  background-color: #eee;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid black;
-  width: 30%;
-  height: 40%;
-  border-radius: 15px;
-}
-
-#close-modal {
-  cursor: pointer;
-  float: right;
-  font-size: 1rem;
-}
-
-.contact-header {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
-
-.input {
-  font-family: Monserrat, sans-serif;
-  margin: .5rem;
-  width: 20rem;
-  border-radius: 2px;
 }
 
 /* media queries */
@@ -454,14 +349,9 @@ body, html {
 }
 
 @media(max-width: 1600px) {
-  .work-img-group {
-    margin-left: 5rem;
+  .experience-text {
+    transform: translateX(200px);
   }
-
-  .work-description {
-    max-width: 40rem;
-  }
-
 }
 
 @media(max-width: 1400px) {
@@ -471,7 +361,6 @@ body, html {
 
   .timeclock-image-2 {
     width: 12rem;
-    transform: translate(300px, 125px);
   }
 }
 
@@ -482,32 +371,13 @@ body, html {
 
   .timeclock-image-2 {
     width: 8rem;
-    transform: translate(300px, 125px);
   }
 
-}
-
-@media(max-width: 1000px) {
-  .work {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .work-img {
-    flex: none;
-  }
-
-  .work-description {
-    margin-top: 20rem;
-    flex: none;
-  }
 }
 
 @media(max-width: 800px) {
-  .about-text {
-    margin-left: 5rem;
+  body, html {
+    font-size: 12px;
   }
 
   .timeclock-image-1 {
@@ -516,19 +386,22 @@ body, html {
 
   .timeclock-image-2 {
     width: 8rem;
-    transform: translate(200px, 100px);
-  }
-
-  .common-header {
-    font-size: 1.2rem;
-  }
-
-  .about-text-content {
-    font-size: .8rem;
   }
 
   .icon-description {
     font-size: .8rem;
+  }
+
+  .experience-text {
+    transform: translateX(50px);
+  }
+
+  .work {
+    height: 50rem;
+  }
+
+  .work-header-content {
+    padding: 0;
   }
 
   .timeclock-app-description {
@@ -544,46 +417,38 @@ body, html {
 }
 
 @media(max-width: 600px) {
-  .header-element-1 {
-    font-size: 4rem;
+  body, html {
+    font-size: 10px;
+  }
+
+  .header {
+    height: 80vh;
   }
 
   .header-element-2 {
-    font-size: 1rem;
+    padding: 5rem;
   }
 
-  .header-element-3 {
-    font-size: 1rem;
-  }
-
-  .scroll-down-btn {
-    width: 8rem;
-    height: 3rem;
-    font-size: 1rem;
-  }
-
-  .about-text {
-    margin-left: 2rem;
-  }
-
-  .about-text-content {
-    font-size: .8rem;
-  }
-
-  .experience-text {
-    transform: translate(50px, 0px);
-  }
-
-  .work-content {
+  .about {
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
   }
 
-  .work-img-group {
-    position: absolute;
-    flex: none;
+  .btn {
+    visibility: hidden;
+  }
+
+  .about-text {
+    margin: 0;
+    padding: 0 10rem;
+  }
+
+  .experience-text {
+    padding: 0 10rem;
+    transform: translateX(0);
   }
 
   .timeclock-image-1 {
@@ -591,13 +456,8 @@ body, html {
   }
 
   .timeclock-image-2 {
-    width: 8rem;
-    transform: translate(150px, 75px);
-  }
-
-  .timeclock-app-header {
-    font-size: 1rem;
-    margin-top: 1rem;
+    width: 7rem;
+    transform: translateX(0);
   }
 
   .timeclock-app-btn {
@@ -606,13 +466,22 @@ body, html {
     font-size: .7rem;
     margin-top: 3rem;
   }
-
-  .common-header {
-    font-size: 1rem;
-  }
-
 }
 
 @media(max-width: 300px) {
+  body, html {
+    font-size: 8px;
+  }
 
+  .header {
+    height: 50vh;
+  }
+
+  .header-element-2, .header-element-3 {
+    padding: 0 .6rem;
+  }
+
+  .about {
+    height: 40rem;
+  }
 }
