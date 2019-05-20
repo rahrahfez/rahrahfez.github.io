@@ -166,7 +166,7 @@ body, html {
 
 .about-text {
   flex: 1 1;
-  margin-left: 40rem;
+  margin-left: 20rem;
 }
 
 .about-text-content {
@@ -180,7 +180,7 @@ body, html {
 
 .experience-text {
   flex: 0 1 50%;
-  transform: translateX(350px);
+  transform: translateX(200px);
 }
 
 .experience-list-group {  
@@ -344,13 +344,13 @@ body, html {
   }
 
   .about-text {
-    margin-left: 5rem;
+    margin-left: 15rem;
   }
 }
 
 @media(max-width: 1600px) {
   .experience-text {
-    transform: translateX(200px);
+    transform: translateX(100px);
   }
 }
 
@@ -373,6 +373,13 @@ body, html {
     width: 8rem;
   }
 
+  .about {
+    height: 20rem;
+  }
+
+  .about-text {
+    margin-left: 5rem;
+  }
 }
 
 @media(max-width: 800px) {
@@ -443,7 +450,7 @@ body, html {
 
   .about-text {
     margin: 0;
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 
   .experience-text {
@@ -469,10 +476,6 @@ body, html {
 }
 
 @media(max-width: 300px) {
-  body, html {
-    font-size: 8px;
-  }
-
   .header {
     height: 50vh;
   }
