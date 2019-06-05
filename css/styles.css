@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .social-icon {
@@ -36,9 +37,10 @@ body, html {
 .navigation-bar {
   height: 4rem;
   position: fixed;
-  background-color: #fff;
+  background-color: #fafbfc;
   width: 100%;
   z-index: 1;
+  box-shadow: 0, 10px, rgba(0, 0, 0, .5);
 }
 
 .nav-links-group {
