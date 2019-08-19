@@ -103,17 +103,12 @@ body, html {
 }
 
 .header-element-2 {
-  font-size: 1.2rem;
+  width: 60vw;
+  font-size: 2rem;
   margin: 0;
   font-weight: 400;
-  padding: 0 20rem;
-  text-justify: center;
-}
-
-.header-element-3 {
-  font-size: 1.2rem;
-  margin-bottom: 0;
-  font-weight: 400;  
+  padding: 0;
+  text-align: center;
 }
 
 .common-header {
@@ -215,6 +210,10 @@ body, html {
 }
 
 .experience-firebase-icon {
+  width: 2rem;
+}
+
+.experience-mysql-icon {
   width: 2rem;
 }
 
