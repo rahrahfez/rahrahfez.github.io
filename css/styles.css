@@ -149,7 +149,7 @@ body, html {
 }
 
 .about {
-  padding: 2rem;
+  padding: 0;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -241,7 +241,7 @@ body, html {
   font-weight: 300;
   text-align: center;
   margin: 0 0 3rem 0;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .work-content {
