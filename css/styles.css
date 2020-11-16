@@ -1,0 +1,491 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #555;
+  transition: color .3s;
+  margin-right: 1rem;
+}
+
+.social-icon-tw:hover {
+  color: #1DA1F2;
+}
+
+.social-icon-fb:hover {
+  color: #3C5A99;
+}
+
+.social-icon-ld:hover {
+  color: #0077B5;
+}
+
+.social-icon-gh:hover {
+  color: #000000;
+}
+
+.social-icon-email:hover {
+  color: #999333;
+}
+
+/* navigation bar */
+.navigation-bar {
+  height: 4rem;
+  position: fixed;
+  background-color: #fafbfc;
+  width: 100%;
+  z-index: 1;
+  -moz-box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .3);
+  box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .3);
+}
+
+.nav-links-group {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.nav-links {
+  color: #555;
+  cursor: pointer;
+  margin-right: 4rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.nav-links:visited {
+  color: #555;
+}
+
+.contact-nav-btn {
+  font-size: .8rem;
+  padding: .3rem;
+  margin-right: 3rem;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* header */
+.header {
+  background: linear-gradient(to top, rgba(0, 0, 0, .5),
+  rgba(0, 0, 0, .6)
+  ),url('../img/laurynas-mereckas-1487417-unsplash.jpg') center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.introduction-banner {
+  height: 50vh;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.header-element-1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.header-element-2 {
+  width: 60vw;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 400;
+  padding: 0;
+  text-align: center;
+}
+
+.common-header {
+  font-family: Montserrat, sans-serif;
+  margin: 1rem 0;
+}
+
+.scroll-btn {
+  margin-top: 7rem;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-down-btn {
+  border: 1px solid white;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 25px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  background-color: rgb(42, 102, 214);
+  color: white;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.scroll-down-btn:hover {
+  color: rgb(42, 102, 214);
+  background-color: white;
+  font-size: 1.3rem;
+}
+
+/* about */
+#about {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}
+
+.about {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 20rem;
+}
+
+.about-text-header {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.about-text {
+  flex: 1 1;
+  margin-left: 20rem;
+}
+
+.about-text-content {
+  font-size: 1rem;
+}
+
+.experience-text-header {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.experience-text {
+  flex: 0 1 50%;
+  transform: translateX(200px);
+}
+
+.experience-list-group {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.icon-description {
+  vertical-align: .6rem;
+}
+
+.experience-list-icon {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.experience-angular-icon {
+  width: 2rem;
+}
+
+.experience-angular-material-icon {
+  width: 2rem;
+}
+
+.experience-asp-icon {
+  width: 2rem;
+}
+
+.experience-firebase-icon {
+  width: 2rem;
+}
+
+.experience-mysql-icon {
+  width: 2rem;
+}
+
+/* work */
+#work {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}
+
+.header-underline {
+  width: 10rem;
+  height: .2rem;
+  background-color: #222;
+  margin-bottom: .6rem;
+}
+
+.work {
+  height: 80rem;
+  margin-left: 0;
+  background-color: rgb(197, 197, 197);
+}
+
+.work-header-content {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 3rem 0;
+  /* padding: 2rem; */
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.work-img-group {
+  flex: 1 1;
+  position: relative;
+  margin-left: 0;
+}
+
+.work-img {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
+}
+
+.work-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeclock-image-1 {
+  width: 35rem;
+}
+
+.timeclock-image-2 {
+  width: 15rem;
+  transform: translateX(-70px);
+}
+
+.timeclock-app-header {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.timeclock-app-description {
+  padding: 0rem 2rem;
+}
+
+.timeclock-app-description-footer {
+  margin: 0;
+  font-weight: 200;
+}
+
+.timeclock-app-btn {
+  border: 1px solid white;
+  margin-top: 2rem;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #7C4DFF;
+  color: white;
+  font-size: 1rem;
+  transition: all .5s;
+}
+
+.timeclock-app-btn:hover {
+  background-color: white;
+  color: #7C4DFF;
+  font-size: 1.1rem;
+  border: 1px solid #7C4DFF;
+}
+
+/* contact */
+.contact {
+  background-color: #4a4e4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+.copyright p {
+  margin: 0;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+.contact-me-btn {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+/* media queries */
+@media(max-width: 1980px) {
+  .work-img-group {
+    margin-left: 2rem;
+  }
+
+  .about-text {
+    margin-left: 15rem;
+  }
+}
+
+@media(max-width: 1600px) {
+  .experience-text {
+    transform: translateX(100px);
+  }
+}
+
+@media(max-width: 1400px) {
+  .timeclock-image-1 {
+    width: 30rem;
+  }
+
+  .timeclock-image-2 {
+    width: 12rem;
+  }
+}
+
+@media(max-width: 1200px) {
+  .timeclock-image-1 {
+    width: 20rem;
+  }
+
+  .timeclock-image-2 {
+    width: 8rem;
+  }
+
+  .about {
+    height: 20rem;
+  }
+
+  .about-text {
+    margin-left: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  body, html {
+    font-size: 12px;
+  }
+
+  .timeclock-image-1 {
+    width: 20rem;
+  }
+
+  .timeclock-image-2 {
+    width: 8rem;
+  }
+
+  .icon-description {
+    font-size: .8rem;
+  }
+
+  .experience-text {
+    transform: translateX(50px);
+  }
+
+  .work {
+    height: 50rem;
+  }
+
+  .work-header-content {
+    padding: 0;
+  }
+
+  .timeclock-app-description {
+    font-size: .8rem;
+  }
+
+  .timeclock-app-btn {
+    width: 5rem;
+    font-size: .8rem;
+    height: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media(max-width: 600px) {
+  body, html {
+    font-size: 10px;
+  }
+
+  .header {
+    height: 80vh;
+  }
+
+  .header-element-2 {
+    padding: 5rem;
+  }
+
+  .about {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .btn {
+    visibility: hidden;
+  }
+
+  .about-text {
+    margin: 0;
+    padding: 0 5rem;
+  }
+
+  .experience-text {
+    padding: 0 10rem;
+    transform: translateX(0);
+  }
+
+  .timeclock-image-1 {
+    width: 15rem;
+  }
+
+  .timeclock-image-2 {
+    width: 7rem;
+    transform: translateX(0);
+  }
+
+  .timeclock-app-btn {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: .7rem;
+    margin-top: 3rem;
+  }
+}
+
+@media(max-width: 300px) {
+  .header {
+    height: 50vh;
+  }
+
+  .header-element-2, .header-element-3 {
+    padding: 0 .6rem;
+  }
+
+  .about {
+    height: 40rem;
+  }
+}

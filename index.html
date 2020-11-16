@@ -1,27 +1,112 @@
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
-  </head>
-  <body>
-    <h1>Test QR Scanner</h1>
-    <input 
-      type=text 
-      size=16 
-      placeholder="Tracking Code" 
-      class=qrcode-text>
-        <label class=qrcode-text-btn>
-          <input 
-            type=file 
-            accept="image/*" 
-            capture=environment 
-            onchange="openQRCamera(this);" 
-            tabindex=-1>
-        </label> 
-    <input type=button value="Go" disabled>
-    <div class="qrcode">
-      <img src="1499242522Pi-encoded-as-QR.gif">
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>David Om</title>
+        <link rel="shortcut icon" type="image/png" href="/img/srs-logo.jpeg"/>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- fixed top navigation header -->
+        <div class="navigation-bar">
+            <div class="navigation-bar-brand"></div>
+            <ul class="nav-links-group">
+                <li><a href="#" class="nav-links nav-home current">Home</a></li>
+                <li><a href="#about" class="nav-links nav-about current">About</a></li>
+                <li><a href="#work" class="nav-links nav-work current">Work</a></li>
+                <li><a href="https://www.linkedin.com/in/david-om" target="_blank" class="social-icon social-icon-ld"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/rahrahfez" target="_blank" class="social-icon social-icon-gh"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:david.om582@gmail.com" class="social-icon social-icon-email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <!-- /navigation -->
+
+        <!-- header -->
+        <header class="header" id="header">
+            <div class="header-content">
+                <div class="introduction-banner">
+                    <h1 class="header-element-1">Hello.</h1>
+                    <h3 class="header-element-2">My name is David and I am an aspiring full-stack web developer 
+                        based out of Charlotte, NC with experience in Angular and .NET Core. 
+                    </h3>
+                    <h3 class ="header-element-2">
+                        I also have experience
+                        building databases with MySQL.
+                    </h3>
+                    <div class="scroll-btn">
+                        <a data-scroll href="#about">
+                            <button class="btn scroll-down-btn">About Me</button>
+                        </a>              
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="about-text">
+                <h1 class="about-text-header common-header">About Me</h1>
+                <p class="about-text-content">I started programming back in 2015 with the aim to become a game developer. I began learning C++
+                    and SDL2. After a couple of small unreleased games, I then pivoted my goal and am 
+                    now focused on front-end web development. My dream is to one day be a full stack web developer,
+                    building web apps that incorporate augmented reality and machine learning.
+                </p>
+            </div>
+
+            <div class="experience-text">
+                <h1 class="experience-text-header common-header">Proficiencies</h1>
+                <ul class="experience-list-group">
+                    <li><img class="experience-list-icon experience-angular-icon" src="img/angular_icon.png"><span class="icon-description">Angular</span></li>
+                    <li><img class="experience-list-icon experience-asp-icon" src="img/1_UtlEafDhb9EzAzRYl7P5kw.png"><span class="icon-description">.NET Core</span></li>
+                    <li><img class="experience-list-icon experience-mysql-icon" src="img/mysql_64_px.png"><span class="icon-description">MySQL</span></li>
+                    <li><img class="experience-list-icon experience-angular-material-icon" src="img/angular_material_icon_temp.png"><span class="icon-description">Angular Material</span></li>
+                    <li><img class="experience-list-icon experience-firebase-icon" src="img/firebase_logo.png"><span class="icon-description">Firebase</span></li>
+                </ul>
+            </div>
+        </section>
+        <!-- /about -->
+
+        <!-- work -->
+        <section class="work" id="work">
+            <div class="work-header">
+                <h1 class="work-header-content common-header">Current Projects</h1>
+            </div>
+            <div class="work-content">
+                <div class="work-description">
+                    <div class="work-img-group">
+                        <img class="timeclock-image-1 work-img" src="img/timeclock_app_ss_1.png">
+                        <img class="timeclock-image-2 work-img" src="img/timeclock_app_ss_2.png">
+                    </div>
+                    <h3 class="timeclock-app-header common-header">Timeclock-App</h3>
+                    <p class="timeclock-app-description">A simple timekeeping app that allows the user to clock in and clock out. Viewing timesheet
+                        will show the user's previous times logged.
+                    </p>
+                    <h5 class="timeclock-app-description-footer">Built using Angular 7 with Angular Material and Firebase.</h5>
+                    <a class="timeclock-app-link" href="https://github.com/rahrahfez/timeclock-app" target="_blank">
+                        <button class="timeclock-app-btn">View on Github</button>
+                    </a>
+                </div>
+            </div>    
+        </section>
+        <!-- /work -->
+
+        <!-- contact form -->
+        <section class="contact" id="contact"> 
+            <div class="copyright">
+                <p>Copyright &copy; 2019 David Om</p>
+                <p>Credit to www.unsplash.com for background photo.</p>
+            </div>
+        </section>      
+        <!-- /contact form -->
+        
+        <script src="app.js"></script>    
+    </body>
+    
 </html>
